@@ -1,15 +1,25 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-tint: var(--tint);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --tint: #52525C;
+}
+
+.dark {
+  --background: #171717;
+  --foreground: #ffffff;
+  --tint: #9F9FA9;
 }
 
 @media (prefers-color-scheme: dark) {
