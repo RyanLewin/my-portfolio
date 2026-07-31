@@ -37,3 +37,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.circular-image {
+  object-fit: cover;
+  border-radius: 100%;
+  border: 3px solid #112D4E;
+}

@@ -18,13 +18,13 @@ interface AccordionCustomProps {
 
 const AccordionCustom = ({ className, items }: AccordionCustomProps) => (
 	<Accordion.Root 
-		className={cn("w-75 rounded-md bg-tint-bg shadow-[0_2px_10px] shadow-black/5", className)}
+		className={cn("w-75 rounded-md flex flex-col gap-3", className)}
 		type="single"
-		defaultValue="item-1"
+		// defaultValue="item-1"
 		collapsible
 	>
         {items.map((item) => (
-            <AccordionItem value={item.id} key={item.id} className="mb-2">
+            <AccordionItem value={item.id} key={item.id} className="bg-tint-bg shadow-[0_2px_10px] shadow-black/5 ">
                 <AccordionTrigger>{item.triggerText}</AccordionTrigger>
                 <AccordionContent className="AccordionContent">{item.contentText}</AccordionContent>
             </AccordionItem>
