@@ -7,19 +7,22 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-tint: var(--tint);
+  --color-tint-text: var(--tint-text);
+  --color-tint-bg: var(--tint-bg);
 }
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --tint: #52525C;
+  --tint-text: #52525C;
+  --tint-bg: #dedddd;
 }
 
 .dark {
   --background: #171717;
   --foreground: #ffffff;
-  --tint: #9F9FA9;
+  --tint-text: #9F9FA9;
+  --tint-bg: #242424;
 }
 
 @media (prefers-color-scheme: dark) {
