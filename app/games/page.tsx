@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../globals.css";
 import "@/app/styles/filters.css"
 import { cn } from "@/components/ui/utils";
@@ -79,52 +79,70 @@ const links : CustomLink[] = [
 // }
 
 export default function Games() {
+    
+    const allFilterNames = Object.values(filters).map(f => f.text);
+
     const [activeFilters, setActiveFilters] = useState<string[]>(
         Object.values(filters).map(f => f.text) 
     );
 
-    const handleToggle = (filterText: string, isPressed: boolean) => {
+    // useEffect(() => {
+    //     console.log('Active filters updated:', activeFilters);
+    // }, [activeFilters]);
+
+    const handleToggle = (filterText: string) => {
         setActiveFilters(prev => 
-            isPressed 
-                ? [...prev, filterText] 
-                : prev.filter(t => t !== filterText)
+            prev.includes(filterText) 
+                ? prev.filter(t => t !== filterText)
+                : [...prev, filterText]
         );
     };
     
+    const handleSelectAll = () => { setActiveFilters(allFilterNames) };
+    const handleClearAll = () => { setActiveFilters([]); };
+    
     const visibleLinks = links.filter(link => {
-        // Show the game if it has AT LEAST ONE tag that is currently active.
         return link.usedFilters.some(filter => activeFilters.includes(filter.text));
     });
 
     return(
         <div className="flex flex-col flex-1 items-center justify-center bg-background font-sans">
-        <main className="flex flex-1 w-full flex-col items-center justify-between py-16 px-3 lg:px-16 bg-background sm:items-center">
-            <p className="text-3xl mb-8">Games</p>
-            <div className="w-full flex flex-wrap gap-2 mb-16 align-middle items-center justify-center">
-                <p className="mr-4">Filter:</p>
-                {Object.values(filters).map((filter) => {
-                    const isPressed = activeFilters.includes(filter.text);
-                    return(
-                            <Toggle.Root 
-                                key={filter.text} 
-                                onPressedChange={(state) => handleToggle(filter.text, state)}
-                                defaultPressed={isPressed} className={cn("py-0.5 px-2.5 rounded-4xl border-tint-bg text-slate-950 text-lg align-baseline data-[state=off]:bg-tint-bg ", filter.color)}>
-                                <p>{filter.text}</p>
-                            </Toggle.Root>
-                    );
-                })}
-            </div>
+            <main className="flex flex-1 w-full flex-col items-center justify-between py-16 px-3 lg:px-16 bg-background sm:items-center">
+                <p className="text-3xl mb-8">Games</p>
+                <div className="w-full flex flex-wrap gap-2 mb-16 align-middle items-center justify-center">
+                    <p className="mr-4">Filter:</p>
+                    <div className="flex mr-4 gap-1">
+                        <button onClick={handleSelectAll} className="hover:bg-slate-500 bg-slate-200 text-slate-950 py-0.5 px-2.5 rounded-4xl border-tint-bg text-lg align-baseline">All</button>
+                        <button onClick={handleClearAll} className="hover:bg-slate-500 bg-slate-200 text-slate-950 py-0.5 px-2.5 rounded-4xl border-tint-bg text-lg align-baseline">None</button>
+                    </div>
+                    
+                    {Object.values(filters).map((filter) => {
+                        const isPressed = activeFilters.includes(filter.text);
+                        return(
+                                <Toggle.Root 
+                                    key={filter.text} 
+                                    onPressedChange={() => handleToggle(filter.text)}
+                                    defaultPressed={isPressed} 
+                                    pressed={isPressed}
+                                    className={cn("py-0.5 px-2.5 rounded-4xl border-tint-bg text-slate-950 text-lg align-baseline data-[state=off]:bg-tint-bg hover:opacity-80 ", 
+                                        isPressed ? filter.color : "bg-tint-bg")}
+                                >
+                                    <p>{filter.text}</p>
+                                </Toggle.Root>
+                        );
+                    })}
+                </div>
 
-            <div className="flex flex-wrap gap-8 w-full justify-evenly">
-                {visibleLinks.map(link => (
-                    <FilteredLink 
-                        key={link.id} 
-                        link={link} 
-                        activeFilters={activeFilters} // Pass active state down so cards can gray out tags
-                    />
-                ))}
-            </div>
-        </main>
+                <div className="flex flex-wrap gap-8 w-full justify-evenly">
+                    {visibleLinks.map(link => (
+                        <FilteredLink 
+                            key={link.id} 
+                            link={link} 
+                            activeFilters={activeFilters}
+                        />
+                    ))}
+                </div>
+            </main>
         </div>
     );
 }

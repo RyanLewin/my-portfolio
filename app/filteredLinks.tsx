@@ -45,7 +45,7 @@ function FilteredLink({ link, activeFilters }: { link: CustomLink, activeFilters
                             />
                             <p className="text-center text-2xl font-bold mb-4">{link.title}</p>
                             <p className="w-full text-justify mb-4">Contribution: {link.contribution}</p>
-                            <div className="flex flex-wrap justify-start gap-2 w-full">
+                            <div className="flex flex-wrap justify-center gap-2 w-full">
                                 {Object.values(link.usedFilters).map((filter: Filter) => {
                                     const isSelected = activeFilters.includes(filter.text);
                                     return (
