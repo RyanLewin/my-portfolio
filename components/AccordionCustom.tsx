@@ -13,15 +13,16 @@ export type AccordionItemData = {
 // 2. Define the props for the root custom component
 interface AccordionCustomProps {
 	items: AccordionItemData[];
-    className: string
+    className: string,
+	type?: "single" | "multiple"; // Optional prop to specify the type of accordion
 }
 
-const AccordionCustom = ({ className, items }: AccordionCustomProps) => (
+const AccordionCustom = ({ className, items, type }: AccordionCustomProps) => (
 	<Accordion.Root 
 		className={cn("w-75 rounded-md flex flex-col gap-3", className)}
-		type="single"
+		type={type || "single"}
 		// defaultValue="item-1"
-		collapsible
+		collapsible={type === "single" ? true : undefined}
 	>
         {items.map((item) => (
             <AccordionItem value={item.id} key={item.id} className="bg-tint-bg shadow-[0_2px_10px] shadow-black/5 ">
@@ -88,7 +89,7 @@ function AccordionContent({
 			)}
 			{...props}
 		>
-			<div className="px-5 py-3.75">{children}</div>
+			<div className="px-5 py-3.75 text-center md:text-left">{children}</div>
 		</Accordion.Content>
 	);
 }

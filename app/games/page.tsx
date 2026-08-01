@@ -5,7 +5,7 @@ import "../globals.css";
 import "@/app/styles/filters.css"
 import { cn } from "@/components/ui/utils";
 import { Toggle } from "radix-ui";
-import { CustomLink, FilteredLink, filters } from "../filteredLinks";
+import { CustomLink, FilteredLink, filters } from "../../components/ui/filteredLinks";
 
 // const filterStyles = {unreal: "#9dfdff", cplus: "#85ffb4", bp: "#85ff8b"}
 
@@ -16,7 +16,7 @@ const links : CustomLink[] = [
         img:"/books/Books_300.png", 
         alt:"Icon for the game books upon books, showing books stacked on top of books", 
         title:"Books Upon Books", 
-        contribution:"Self-designed and published game.", 
+        contribution:"It’s time to turn the page and create the bookshop of your dreams. Customise your Layout. Customise your Colour Scheme. Build bigger and bigger. A casual, simulation game where you get to build and tend to your own bookshop. ", 
         usedFilters:[filters.unreal, filters.cplus, filters.bp, filters.steam], 
         timeline:"January 2024 - March 2025",
         imgClass:"",
@@ -27,7 +27,7 @@ const links : CustomLink[] = [
         img:"/astronaught/astro_icon.png", 
         alt:"Icon for the game astronaught, showing an open doorway into a wasteland tinted heavily red", 
         title:"Astronaught", 
-        contribution:"AI for the robot enemies, making use of State Tree's in Unreal to spawn enemies and fight the player. Programmed the ship's turrets and upgradables, which auto fire on the enemies. Implemented day/night cycle that rotated the sun and moon and controlled spawning. UI implementation with compass towards the ship.", 
+        contribution:"What started as a routine reconnaissance of S'ram quickly turned to chaos, and a critical engine failure for the Autumn. Battle your way through the planet of S'ram, a procedurally genrated planet. Upgrade the Autumn with whatever you can find, and try to escape the planet while managing the onslaught of the mysterious robots. Find resources by day, and defend the Autumn by night. Fight to survive a grueling mission against dangerous robotic foes, and escape to the safety of your fleet.", 
         usedFilters:[filters.unreal, filters.cplus, filters.bp, filters.itch], 
         timeline:"September 2023", 
         imgClass:"object-[50%_40%]"
@@ -38,7 +38,7 @@ const links : CustomLink[] = [
         img:"/ruff_n_tumble/ruffntumble.jpg", 
         alt:"Icon for the game Ruff and Tumble, showing the title of the game and a bunch of chaotic animals and bean guys fighting", 
         title:"Ruff 'N' Tumble", 
-        contribution:"Implemented the mall and lobby systems, allowing for waiting for and joining games. Added gamemodes, 'King of the Hill', 'Slushy', 'Diner Dash' and 'Racing'. Also UI and bug fixing based on work from before I joined.", 
+        contribution:"A multiplayer beat 'em up party game, where you run around various maps and arenas, picking up weapons such as the freeze gun, getting power ups to supersize or minify your character, and riding vehicles like trams, wheelbarrows and horses all with their own advantages and disadvantages. The game had a variety of game modes such as King of the Hill, Capture the Flag, Racing, etc.", 
         usedFilters:[filters.unreal, filters.cplus, filters.bp], 
         timeline:"January 2022 - August 2023", 
         imgClass:"object-[50%_40%]"
@@ -49,7 +49,7 @@ const links : CustomLink[] = [
         img:"/horror/multiplayer-horror.png", 
         alt:"Image showing the back of a worker looking out of a large doorway with a creature looming over him with tentacles growing out of it's face.", 
         title:"Multiplayer Horror", 
-        contribution:"Implemented voice chat with switching of channels. Added character mechanics for alien abilities, popups components for pickup items and doors. In charge of UI, game modes and minigames.", 
+        contribution:"FB was a Multiplayer Horror-Social Deduction game of Psycho Hound's IP, taking inspiration from the movie The Thing, and games such as Dead by Daylight and Dead Space 3. 7 survivors found themselves trapped in a remote tundra base with one killer Mutant. As the game began, one player is chosen to start out as the mutant. They are a tall, grotesque alien with different abilities, ranging from a burst of sprinting, to hurling rubble down a corridor at survivors, to shrieking and turning off all the fuse boxes, bringing the base into almost complete darkness. Their primary role was to down and infect all the other survivors and prevent anyone from escaping. The survivors had to try and fix the power, collect the data and then escape without being taken over by the Mutant.", 
         usedFilters:[filters.unreal, filters.cplus, filters.bp, filters.windows], 
         timeline:"January 2023 - August 2023", 
         imgClass:"object-[50%_40%]"
@@ -60,7 +60,7 @@ const links : CustomLink[] = [
         img:"/audl/AUDL.png", 
         alt:"Icon for the game AUDL, showing a badge with a frisbee and with the letters AUDL inside", 
         title:"Ultimate Frisbee", 
-        contribution:"Implemented networking for joining games and player synchronisation, general gameplay loop and UI, audio programming for commentary.", 
+        contribution:"This frisbee game featured single player and multiplayer functionality, where the player could play a full game of Ultimate Frisbee, with full career mode campaigns and games with all 4 quarters, overtime and sudden death. Unfortunately funding was pulled for the project due to monetary reasons and complications in discussions between the funders and directors, meaning the game was never finished or released despite being so close to beta testing. Originally, the game was only designed with the single player game loop in mind, but eventually had to go through a refactor to enable all the gameplay to network.", 
         usedFilters:[filters.unreal, filters.cplus, filters.bp, filters.windows], 
         timeline:"January 2022 - December 2022", 
         imgClass:"object-[50%_40%]"
