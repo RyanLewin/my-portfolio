@@ -10,7 +10,7 @@ export default function BookClubPage() {
                     <p className="text-2xl">Currently Reading</p>
                     <p className="mb-2 font-semibold">A Parade of Horribles: Dungeon Crawler Carl, Book 8</p>
                     <Progress.Root
-                        className="relative h-6 w-full max-w-4/5 mx-auto overflow-hidden rounded-full bg-foreground/80"
+                        className="relative h-6 w-full max-w-4/5 mx-auto overflow-hidden rounded-full bg-green-700/60"
                         style={{
                             // Fix overflow clipping in Safari
                             // https://gist.github.com/domske/b66047671c780a238b51c51ffde8d3a0
