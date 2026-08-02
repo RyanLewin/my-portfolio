@@ -1,8 +1,13 @@
+// "use client";
+
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { cn } from "@/components/ui/utils";
+import ToggleDark from "@/components/toggleDark";
 
 export function Header() {
+
     const navLinks = [
         {name: "Home", href: "/"},
         {name: "Games", href: "/games"},
@@ -28,6 +33,9 @@ export function Header() {
                             {link.name}
                         </a>
                         ))}
+                        
+                        <ToggleDark />
+                        {/* <button onClick={handleToggle} className={cn("hover:bg-slate-500 bg-slate-200 text-slate-950 py-0.5 px-2.5 rounded-4xl border-tint-bg text-lg align-baseline")}>Toggle Theme</button> */}
                     </nav>
 
                     {/* Desktop CTA */}
@@ -43,7 +51,7 @@ export function Header() {
                                 <Menu className="h-5 w-5" />
                             </Button>
                         </SheetTrigger>
-                        <SheetContent>
+                        <SheetContent side="right">
                             <nav className="flex flex-col gap-6 mt-8 mx-8">
 
                                 <span className="font-semibold">Ryan Lewin - ryanjlewin@gmail.com</span>
@@ -56,6 +64,9 @@ export function Header() {
                                         {link.name}
                                     </a>
                                 ))}
+                                
+                                <ToggleDark />
+                                {/* <button onClick={handleToggle} className={cn("hover:bg-slate-500 bg-slate-200 text-slate-950 py-0.5 px-2.5 rounded-4xl border-tint-bg text-lg align-baseline")}>Toggle Theme</button> */}
                             </nav>
                         </SheetContent>
                     </Sheet>

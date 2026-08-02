@@ -16,25 +16,25 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --tint-text: #52525C;
-  --tint-bg: #dedddd;
+  --background: oklch(100% 0.00011 271.152);
+  --foreground: oklch(20.463% 0.00002 271.152);
+  --tint-text: oklch(44.225% 0.0163 285.678);
+  --tint-bg: oklch(89.833% 0.00107 11.897);
 }
 
 .dark {
-  --background: #171717;
-  --foreground: #ffffff;
-  --tint-text: #9F9FA9;
-  --tint-bg: #242424;
+  --background: oklch(20.463% 0.00002 271.152);
+  --foreground: oklch(100% 0.00011 271.152);
+  --tint-text: oklch(70.566% 0.01449 285.949);
+  --tint-bg: oklch(26.033% 0.00003 271.152);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);

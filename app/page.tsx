@@ -59,8 +59,8 @@ const accordionSections = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-background font-sans">
-      <main className="flex flex-1 w-full flex-col items-center justify-between py-16 px-3 lg:px-16 bg-background sm:items-center">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans">
+      <main className="flex flex-1 w-full flex-col items-center justify-between py-16 px-3 lg:px-16 sm:items-center">
         <div className="flex flex-col xl:flex-row  self-center items-center gap-8 mb-8">
           <Image
             className="h-48 w-48 object-[0%_40%] object-cover rounded-full  border-4 border-foreground"
