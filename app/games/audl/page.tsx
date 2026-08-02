@@ -1,3 +1,5 @@
+import { YouTubeEmbed } from "@next/third-parties/google";
+
 export default function AUDLPage() {
     return (
         <div className="flex flex-col flex-1 items-center justify-center bg-background font-sans">
@@ -27,8 +29,9 @@ export default function AUDLPage() {
                     <p className="font-bold text-3xl">My Role</p>
                     <p>My role in this game was very spread out, working on Networking to allow server and client players to play through the game, to gameplay for the general game loop, and UI to keep track of and show the correct scores and team/player stats. Also I worked on the Audio programming, having to design a system to concatenate commentary and play the lines at the relevant points of gameplay.</p>
 
-                    <div className="flex flex-wrap w-full justify-between gap-4 lg:gap-4">
-                        <iframe width="1470" height="675" src="https://www.youtube.com/embed/6o-z0nubxZI" title="Frisbee Game - Portfolio" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                
+                    <div className="w-full max-h-fit aspect-video youtube-container">
+                        <YouTubeEmbed videoid="6o-z0nubxZI"/>
                     </div>
                 </div>
             </main>

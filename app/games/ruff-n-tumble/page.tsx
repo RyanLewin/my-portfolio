@@ -3,6 +3,8 @@
 import { ModalImage } from "@/components/ui/modalImage";
 import Image from "next/image";
 import { useState } from "react";
+import { YouTubeEmbed } from "@next/third-parties/google";
+import "@/app/globals.css";
 
 const images = [
     {
@@ -76,8 +78,10 @@ export default function RuffNTumblePage() {
                 </div>
 
                 <div className="w-full h-0.5 bg-tint-bg my-8" />
-
-                <iframe className="w-full aspect-video" width="1470" height="675" src="https://www.youtube.com/embed/5vYVl-_643w" title="Ruff &#39;Em Up - Portfolio" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                
+                <div className="w-full max-h-fit aspect-video youtube-container">
+                    <YouTubeEmbed videoid="5vYVl-_643w"/>
+                </div>
 
                 <div className="w-full h-0.5 bg-tint-bg my-8" />
 

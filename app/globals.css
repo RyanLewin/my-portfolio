@@ -2,6 +2,10 @@
 
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
+:root:has(.no-doc-scroll) {
+    overflow:hidden;
+  }
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -42,4 +46,10 @@ body {
   object-fit: cover;
   border-radius: 100%;
   border: 3px solid #112D4E;
+}
+
+.youtube-container lite-youtube {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none;
 }

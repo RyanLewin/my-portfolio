@@ -2,6 +2,7 @@
 
 import AccordionCustom from "@/components/AccordionCustom";
 import { ModalImage } from "@/components/ui/modalImage";
+import { YouTubeEmbed } from "@next/third-parties/google";
 import { TriangleRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
@@ -178,9 +179,9 @@ export default function BooksPage() {
                 </div>
 
                 <div className="w-full h-0.5 bg-tint-bg my-8" />
-
-                <div className="w-full max-w-[90%] gap-4 aspect-video">
-                    <iframe className="w-full aspect-video" width="1470" height="675" src="https://www.youtube.com/embed/aiLqJiKg0cU" title="Books Upon Books - June Trailer" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                  
+                <div className="w-full max-h-fit aspect-video youtube-container">
+                    <YouTubeEmbed videoid="aiLqJiKg0cU"/>
                 </div>
 
                 <div className="w-full h-0.5 bg-tint-bg my-8" />
