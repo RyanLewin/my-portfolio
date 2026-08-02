@@ -130,7 +130,7 @@ export default function BooksPage() {
                     <Link href="https://store.steampowered.com/app/2999740/Books_Upon_Books/" target="_blank" rel="noopener noreferrer" className="mt-4 text-blue-500 hover:underline text-center">
                         <Image
                             className="dark:invert"
-                            src="/steam.svg"
+                            src="/svgs/steam.svg"
                             alt="Steam logo with link to books upon books steam page."
                             width={48}
                             height={48}

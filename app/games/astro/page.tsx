@@ -99,7 +99,7 @@ export default function AstroPage() {
                     <Link href="https://flinnf.itch.io/astronaught" target="_blank" rel="noopener noreferrer" className="mt-4 text-blue-500 hover:underline text-center">
                         <Image
                             className="invert dark:invert-0 hover:opacity-80"
-                            src="/itch.svg"
+                            src="/svgs/itch.svg"
                             alt="Itch logo with link to astronaught itch page."
                             width={48}
                             height={48}
