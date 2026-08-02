@@ -16,7 +16,7 @@ const links : CustomLink[] = [
         img:"/books/Books_300.png", 
         alt:"Icon for the game books upon books, showing books stacked on top of books", 
         title:"Books Upon Books", 
-        contribution:"It’s time to turn the page and create the bookshop of your dreams. Customise your Layout. Customise your Colour Scheme. Build bigger and bigger. A casual, simulation game where you get to build and tend to your own bookshop. ", 
+        contribution:"It's time to turn the page and create the bookshop of your dreams. Customise your Layout. Customise your Colour Scheme. Build bigger and bigger. A casual, simulation game where you get to build and tend to your own bookshop. ", 
         usedFilters:[filters.unreal, filters.cplus, filters.bp, filters.steam], 
         timeline:"January 2024 - March 2025",
         imgClass:"",

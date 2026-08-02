@@ -15,14 +15,28 @@ interface AccordionCustomProps {
 	items: AccordionItemData[];
     className: string,
 	type?: "single" | "multiple"; // Optional prop to specify the type of accordion
+	defaultValue?: string; // Optional prop for default value when type is "single"
 }
 
-const AccordionCustom = ({ className, items, type }: AccordionCustomProps) => (
-	<Accordion.Root 
+const AccordionCustom = ({ className, items, type = "single", defaultValue }: AccordionCustomProps) => (
+	type === "single" ? <Accordion.Root 
 		className={cn("w-75 rounded-md flex flex-col gap-3", className)}
 		type={type || "single"}
-		// defaultValue="item-1"
-		collapsible={type === "single" ? true : undefined}
+		defaultValue={defaultValue}
+		collapsible={true}
+	>
+        {items.map((item) => (
+            <AccordionItem value={item.id} key={item.id} className="bg-tint-bg shadow-[0_2px_10px] shadow-black/5 ">
+                <AccordionTrigger>{item.triggerText}</AccordionTrigger>
+                <AccordionContent className="AccordionContent">{item.contentText}</AccordionContent>
+            </AccordionItem>
+
+        ))}
+	</Accordion.Root>
+	:
+	<Accordion.Root 
+		className={cn("w-75 rounded-md flex flex-col gap-3", className)}
+		type={"multiple"}
 	>
         {items.map((item) => (
             <AccordionItem value={item.id} key={item.id} className="bg-tint-bg shadow-[0_2px_10px] shadow-black/5 ">

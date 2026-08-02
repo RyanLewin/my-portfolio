@@ -76,7 +76,7 @@ export default function Home() {
           </div>
         </div>
         
-        <AccordionCustom items={accordionSections} className="w-full mb-8"></AccordionCustom>
+        <AccordionCustom items={accordionSections} className="w-full mb-8" defaultValue="item-1"></AccordionCustom>
         
         <div className="flex flex-wrap w-full justify-between gap-4 lg:gap-4">
           <Link className="w-full lg:w-[49%]" href="/games">
@@ -89,10 +89,10 @@ export default function Home() {
             />
             <p className="text-2xl text-center">Games</p>
           </Link>
-          <Link className="w-full lg:w-[49%]" href="/books">
+          <Link className="w-full lg:w-[49%]" href="/book-club">
             <Image
               className="w-full aspect-video rounded-md object-cover hover:border-2 hover:border-foreground focus:border-2 focus:border-foreground active:border-foreground active:border-2"
-              src="/MallOverview1.png"
+              src="/book-club.avif"
               alt="An image showing an overview of the mall from the game Ruff 'N' Tumble, made during my time at Psychohound Ltd."
               width={640}
               height={360}
