@@ -35,7 +35,7 @@ interface CustomLink {
 
 function FilteredLink({ link, activeFilters }: { link: CustomLink, activeFilters: string[] }) {
     return (
-        <Link key={link.id} href={link.href} className="lg:max-w-[30%] flex flex-col flex-wrap justify-start gap-2">
+        <Link key={link.id} href={link.href} className="sm:max-w-[30%] flex flex-col flex-wrap justify-start gap-2">
             <Image
                 className={cn("circular-image aspect-square self-center items-center", link.imgClass)}
                 src={link.img}

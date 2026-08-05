@@ -3,7 +3,7 @@ import { YouTubeEmbed } from "@next/third-parties/google";
 export default function AUDLPage() {
     return (
         <div className="flex flex-col flex-1 items-center justify-center bg-background font-sans">
-            <main className="flex flex-1 w-full flex-col items-center justify-between py-16 px-3 lg:px-16 bg-background sm:items-center">
+            <main className="flex flex-1 w-full flex-col items-center justify-between py-16 px-3 sm:px-16 bg-background sm:items-center">
                 <h1 className="text-4xl font-bold mb-4 text-center">Ultimate Frisbee Game</h1>
                 <h2 className="text-2xl font-bold mb-2">Game Details</h2>
                 <div className="mb-4 text-lg text-center">

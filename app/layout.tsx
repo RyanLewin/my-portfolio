@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <ThemeProvider attribute="class" defaultTheme="system" disableTransitionOnChange>
           <Header></Header>
-          <div className="mx-4 lg:mx-32 bg-background">
+          <div className="mx-4 sm:mx-32 bg-background">
             {children}
           </div>
         </ThemeProvider>

@@ -118,7 +118,7 @@ export default function BooksPage() {
 
     return (
         <div className="flex flex-col flex-1 items-center justify-center bg-background font-sans">
-            <main className="flex flex-1 w-full flex-col items-center justify-between py-16 px-3 lg:px-16 bg-background sm:items-center">
+            <main className="flex flex-1 w-full flex-col items-center justify-between py-16 px-3 sm:px-16 bg-background sm:items-center">
                 <h1 className="text-4xl font-bold mb-4 text-center">Books Upon Books</h1>
                 <h2 className="text-2xl font-bold mb-2">Game Details</h2>
                 <div className="mb-4 text-lg text-center flex flex-col justify-center items-center gap-0">
@@ -186,11 +186,11 @@ export default function BooksPage() {
 
                 <div className="w-full h-0.5 bg-tint-bg my-8" />
 
-                <div className="flex flex-wrap w-full justify-between gap-4 lg:gap-4">
+                <div className="flex flex-wrap w-full justify-between gap-4 sm:gap-4">
                     {images.map((image, index) => (
                         <Image
                             key={index}
-                            className="w-full lg:w-[49%] aspect-video rounded-md object-cover hover:border-2 hover:border-foreground focus:border-2 focus:border-foreground active:border-foreground active:border-2"
+                            className="w-full sm:w-[49%] aspect-video rounded-md object-cover hover:border-2 hover:border-foreground focus:border-2 focus:border-foreground active:border-foreground active:border-2"
                             src={image.src}
                             alt={image.alt}
                             width={640}

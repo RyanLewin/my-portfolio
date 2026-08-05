@@ -60,8 +60,8 @@ const accordionSections = [
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center font-sans">
-      <main className="flex flex-1 w-full flex-col items-center justify-between py-16 px-3 lg:px-16 sm:items-center">
-        <div className="flex flex-col xl:flex-row  self-center items-center gap-8 mb-8">
+      <main className="flex flex-1 w-full flex-col items-center justify-between py-16 px-3 sm:px-16 sm:items-center">
+        <div className="flex flex-col sm:flex-row  self-center items-center gap-8 mb-8">
           <Image
             className="h-48 w-48 object-[0%_40%] object-cover rounded-full  border-4 border-foreground"
             src="/GraduationPhoto.jpg"
@@ -71,15 +71,15 @@ export default function Home() {
             priority
           />
           <div className="flex flex-col">
-            <p className="text-7xl text-center xl:text-left">Ryan Lewin</p>
-            <p className="text-5xl text-center xl:text-left">Programmer</p>
+            <p className="text-7xl text-center sm:text-left">Ryan Lewin</p>
+            <p className="text-5xl text-center sm:text-left">Programmer</p>
           </div>
         </div>
         
         <AccordionCustom items={accordionSections} className="w-full mb-8" defaultValue="item-1"></AccordionCustom>
         
-        <div className="flex flex-wrap w-full justify-between gap-4 lg:gap-4">
-          <Link className="w-full lg:w-[49%]" href="/games">
+        <div className="flex flex-wrap w-full justify-between gap-4 sm:gap-4">
+          <Link className="w-full sm:w-[49%]" href="/games">
             <Image
               className="w-full aspect-video rounded-md object-cover hover:border-2 hover:border-foreground focus:border-2 focus:border-foreground active:border-foreground active:border-2"
               src="/MallOverview1.png"
@@ -89,7 +89,7 @@ export default function Home() {
             />
             <p className="text-2xl text-center">Games</p>
           </Link>
-          <Link className="w-full lg:w-[49%]" href="/book-club">
+          <Link className="w-full sm:w-[49%]" href="/book-club">
             <Image
               className="w-full aspect-video rounded-md object-cover hover:border-2 hover:border-foreground focus:border-2 focus:border-foreground active:border-foreground active:border-2"
               src="/book-club.avif"

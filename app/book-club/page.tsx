@@ -4,7 +4,7 @@ import "../globals.css";
 export default function BookClubPage() {
     return (
         <div className="flex flex-col flex-1 items-center justify-center bg-background font-sans">
-            <main className="flex flex-1 gap-8 w-full flex-col items-center justify-center py-16 px-3 lg:px-16 bg-background text-center">
+            <main className="flex flex-1 gap-8 w-full flex-col items-center justify-center py-16 px-3 sm:px-16 bg-background text-center">
                 <p className="text-3xl mb-8">Book Club</p>
                 <div className="w-full">
                     <p className="text-2xl">Currently Reading</p>

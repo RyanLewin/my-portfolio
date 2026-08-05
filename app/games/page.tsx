@@ -107,7 +107,7 @@ export default function Games() {
 
     return(
         <div className="flex flex-col flex-1 items-center justify-center bg-background font-sans">
-            <main className="flex flex-1 w-full flex-col items-center justify-between py-16 px-3 lg:px-16 bg-background sm:items-center">
+            <main className="flex flex-1 w-full flex-col items-center justify-between py-16 px-3 sm:px-16 bg-background sm:items-center">
                 <p className="text-3xl mb-8">Games</p>
                 <div className="w-full flex flex-wrap gap-2 mb-16 align-middle items-center justify-center">
                     <p className="mr-4">Filter:</p>
