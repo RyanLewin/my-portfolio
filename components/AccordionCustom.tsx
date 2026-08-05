@@ -103,7 +103,7 @@ function AccordionContent({
 			)}
 			{...props}
 		>
-			<div className="px-5 py-3.75 text-center md:text-left">{children}</div>
+			<div className="px-5 py-3.75 text-center sm:text-left">{children}</div>
 		</Accordion.Content>
 	);
 }

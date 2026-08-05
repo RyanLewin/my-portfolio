@@ -23,7 +23,7 @@ export function Header() {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center gap-8">
+                    <nav className="hidden sm:flex items-center gap-8">
                         {navLinks.map((link) => (
                         <a
                             key={link.name}
@@ -39,14 +39,14 @@ export function Header() {
                     </nav>
 
                     {/* Desktop CTA */}
-                    {/* <div className="hidden md:flex items-center gap-4">
+                    {/* <div className="hidden sm:flex items-center gap-4">
                         <Button variant="ghost">Sign In</Button>
                         <Button>Get Started</Button>
                     </div> */}
 
                     {/* Mobile Menu */}
                     <Sheet>
-                        <SheetTrigger asChild className="md:hidden">
+                        <SheetTrigger asChild className="sm:hidden">
                             <Button variant="ghost" size="icon">
                                 <Menu className="h-5 w-5" />
                             </Button>

@@ -12,11 +12,11 @@ const accordionSections = [
     triggerText: "VOIP Plugin", 
     contentText: (
         <div className="w-full flex flex-col gap-1">
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>Created a plugin, making use of the VOIPTalker component to easily add voice chat to the game, allowing switching of channels based on the players current character by making use of Audio Components source bus.</p>
             </div>
-            <div className="w-full h-0.5 bg-background opacity-20 my-2 md:hidden" />
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="w-full h-0.5 bg-background opacity-20 my-2 sm:hidden" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>Added options that allow users to change the volume of specific players.</p>
             </div>
         </div>
@@ -27,11 +27,11 @@ const accordionSections = [
     triggerText: "Character Mechanics", 
     contentText: (
         <div className="w-full flex flex-col gap-1">
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>Charged with working on the alien abilities which were repeatedly changing and being redesigned, abilities included things such as, close attacks that ragdolled characters, throwing objects at targeted players, applying a buff to all lifeforms, etc.</p>
             </div>
-            <div className="w-full h-0.5 bg-background opacity-20 my-2 md:hidden" />
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="w-full h-0.5 bg-background opacity-20 my-2 sm:hidden" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>Abilities were selectable by using a scrollable bar at first before being changed to an ability wheel, which was adapted from a UE Marketplace plugin, where I had to modify how the items were displayed and selected, with requirements to display cooldowns and ability descriptions.</p>
             </div>
         </div>
@@ -42,7 +42,7 @@ const accordionSections = [
     triggerText: "Gameplay Ability System (GAS)", 
     contentText: (
         <div className="w-full flex flex-col gap-1">
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>This is the first project I&apos;ve worked on using GAS, with a bit of a learning curve on how Gameplay Effects and Abilities work and the best practices, but they proved very useful for keeping track of data, especially over network, and with cooldowns and usage of abilities.</p>
             </div>
         </div>
@@ -53,7 +53,7 @@ const accordionSections = [
     triggerText: "Popup Manager", 
     contentText: (
         <div className="w-full flex flex-col gap-1">
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>Implemented a system using gameplay cues that allowed for easy adding of popups to various items around the map, whether it be pickups, doors or other players. All the designer had to do was add to an array with the the interacting player type and then give it a name and if it has a corresponding key. There were ways to add other requirements as well, such as blocking if the player or the item had or didn&apos;t have a specified tag.</p>
             </div>
         </div>
@@ -64,11 +64,11 @@ const accordionSections = [
     triggerText: "Game Modes", 
     contentText: (
         <div className="w-full flex flex-col gap-1">
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>In charge of the game mode which handles where each player spawns keeps track of which player is on what team and when the game should end.</p>
             </div>
-            <div className="w-full h-0.5 bg-background opacity-20 my-2 md:hidden" />
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="w-full h-0.5 bg-background opacity-20 my-2 sm:hidden" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>Also worked on a side game mode where the players can play hide and seek, where the hiders play as the Offsprings whilst the seeker is the survivor and must shine his torch on the hiders to kill them.</p>
             </div>
         </div>
@@ -79,7 +79,7 @@ const accordionSections = [
     triggerText: "Minigames", 
     contentText: (
         <div className="w-full flex flex-col gap-1">
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>Added a minigame to replace button mashing which wasn&apos;t exactly even or foolproof in a multiplayer game. My new design was essentially a rythm game, pressing a given key in a time frame, and if failed called a delegate which could be used to decide if the game should end on failure or reduce points.</p>
             </div>
         </div>
@@ -90,7 +90,7 @@ const accordionSections = [
     triggerText: "Bug Fixing", 
     contentText: (
         <div className="w-full flex flex-col gap-1">
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>Known as cheif bugfixer, I knew the project inside out and often if a bug was found by QA, I would have it fixed before they could finish describing it.</p>
             </div>
         </div>

@@ -14,7 +14,7 @@ const accordionSections = [
     triggerText: "Building", 
     contentText: (
         <div className="w-full flex flex-col gap-1">
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>As the player, you have the ability to spend your hard-earned money on buying 1 functional object per day, and as many decorations as you can afford. You are able to reroll for a small fee, refreshing the objects that are available. New tiles can be unlocked and walls can be customised or removed between tiles.</p>
             </div>
         </div>
@@ -25,7 +25,7 @@ const accordionSections = [
     triggerText: "Colour Palette", 
     contentText: (
         <div className="w-full flex flex-col gap-1">
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>Customise every detail of your shop, even down to the colours used. With 8 changeable colours used throughout, alter these to fit your style and make the shop your own.</p>
             </div>
         </div>
@@ -36,7 +36,7 @@ const accordionSections = [
     triggerText: "Serve Customers", 
     contentText: (
         <div className="w-full flex flex-col gap-1">
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>Customers will come in throughout the day, rummaging through the shelves before going to the counter to be served by you or your temporary hired staff, giving a number of coins.</p>
             </div>
         </div>
@@ -47,7 +47,7 @@ const accordionSections = [
     triggerText: "Restock Shelves", 
     contentText: (
         <div className="w-full flex flex-col gap-1">
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>Once the customer has taken a book, the shelf will need to be restocked. You can see taken books by the red outline and once interacted with, a quick minigame will pop up for you to complete, allowing the customer to use that shelf again.</p>
             </div>
         </div>
@@ -58,7 +58,7 @@ const accordionSections = [
     triggerText: "My Work", 
     contentText: (
         <div className="w-full flex flex-col gap-1">
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>Everything other than the player models, which were purchased as a Synty pack, was programmed, designed and animated by myself.</p>
             </div>
         </div>
@@ -147,14 +147,14 @@ export default function BooksPage() {
 
                 <div className="w-full h-0.5 bg-tint-bg my-8" />
 
-                <div className="text-lg w-full max-w-[90%] flex flex-wrap-reverse md:flex-wrap justify-center mb-8 gap-8 text-center">
-                    <div className="text-lg w-full max-w-[90%] md:max-w-[55%] flex flex-col mb-8 gap-8 text-center">
+                <div className="text-lg w-full max-w-[90%] flex flex-wrap-reverse sm:flex-wrap justify-center mb-8 gap-8 text-center">
+                    <div className="text-lg w-full max-w-[90%] sm:max-w-[55%] flex flex-col mb-8 gap-8 text-center">
                         <p className="font-bold text-3xl">About The Game</p>
                         <p>A casual, simulation game in which you get to design, build upon, and upgrade your very own bookshop, before tending to it&apos;s customers during the day!</p>
                         
                         <AccordionCustom type="multiple" items={accordionSections} className="w-full"></AccordionCustom>
                     </div>
-                    <div className="w-full max-w-full md:max-w-[40%] flex flex-col gap-4 justify-start">
+                    <div className="w-full max-w-full sm:max-w-[40%] flex flex-col gap-4 justify-start">
                         <Image
                             className="w-full aspect-video rounded-md object-cover hover:border-2 hover:border-foreground focus:border-2 focus:border-foreground active:border-foreground active:border-2"
                             src="/books/books-1.png"

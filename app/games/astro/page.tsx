@@ -13,11 +13,11 @@ const accordionSections = [
     triggerText: "AI", 
     contentText: (
         <div className="w-full flex flex-col gap-1">
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>Worked on AI for the robot enemies, making use of the newish State Trees in Unreal to create enemies that spawn in at random sizes and health, move towards the ship and fire rockets at it from a short distance.</p>
             </div>
-            <div className="w-full h-0.5 bg-background opacity-20 my-2 md:hidden" />
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="w-full h-0.5 bg-background opacity-20 my-2 sm:hidden" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>In order to fight back against the robots, the ship has 4 turrets on the corners that I also programmed. The turrets are upgradeable, using parts spawned during the day to increase damage done and fire distance. They automatically focus on the closest enemy, firing at regular intervals.</p>
             </div>
         </div>
@@ -28,11 +28,11 @@ const accordionSections = [
     triggerText: "Day/Night Cycle", 
     contentText: (
         <div className="w-full flex flex-col gap-1">
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>Implemented a simple day/night cycle that rotated the sun and moon to change the lighting and sent a delegate when the day changed to night and vice versa. During the night the enemies spawned intermittently and during the day resource nodes are spawned randomly around the world and in randomly generated structures.</p>
             </div>
-            <div className="w-full h-0.5 bg-background opacity-20 my-2 md:hidden" />
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="w-full h-0.5 bg-background opacity-20 my-2 sm:hidden" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>The calculations for the time of day ended up being simple after initially overcomplicating with divisions by pi when not necessary. In the end it just needed to be ` CurrentTime += DeltaSeconds/DayLength ` which, mod 2 returns a value between 0 and 2, with 1 being the start of night.</p>
             </div>
         </div>
@@ -43,7 +43,7 @@ const accordionSections = [
     triggerText: "Gameplay Ability System (GAS)", 
     contentText: (
         <div className="w-full flex flex-col gap-1">
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>Handled adding the attributes for the ship, including health and fuel amount, including game over events when either health hit 0 or fuel was filled.</p>
             </div>
         </div>
@@ -54,11 +54,11 @@ const accordionSections = [
     triggerText: "UI", 
     contentText: (
         <div className="w-full flex flex-col gap-1">
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>Added Simple UI with Progress Bars showing the Ships Health and Fuel Amount, and a Counter for amount of Scrap collected.</p>
             </div>
-            <div className="w-full h-0.5 bg-background opacity-20 my-2 md:hidden" />
-            <div className="inline-flex items-center text-center md:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden md:block" />
+            <div className="w-full h-0.5 bg-background opacity-20 my-2 sm:hidden" />
+            <div className="inline-flex items-center text-center sm:text-left"><TriangleRightIcon className="flex-none w-8 h-8 mr-8 hidden sm:block" />
                 <p>In the final couple of hours we also realised that it was very easy to lose the ship if you run too far, so I was tasked with adding some kind of pointer towards the ship. At first we wanted a compass but we had locked the camera to one rotation so I ended up using a radial slider with only the handle visible, then doing some maths to set the slider value using the unit direction from the character to the ship and then dot producting with global forward and right vectors.</p>
             </div>
         </div>
@@ -132,7 +132,7 @@ export default function AstroPage() {
 
                 <div className="flex flex-row flex-wrap w-full max-w-[90%] justify-evenly gap-4 lg:gap-4">
 
-                    <div className="flex flex-col flex-wrap w-full max-w-full md:max-w-[49%] justify-start gap-4 lg:gap-4">
+                    <div className="flex flex-col flex-wrap w-full max-w-full sm:max-w-[49%] justify-start gap-4 lg:gap-4">
                         {images.map((image, index) => (
                             <Image
                                 key={index}
@@ -150,7 +150,7 @@ export default function AstroPage() {
 
                     {/* <div className="w-full h-0.5 bg-tint-bg my-8" /> */}
 
-                    <div className="text-lg flex flex-col mb-8 gap-8 text-center w-full md:max-w-[49%]">
+                    <div className="text-lg flex flex-col mb-8 gap-8 text-center w-full sm:max-w-[49%]">
                         <p className="font-bold text-3xl">My Role</p>
                 
                         <AccordionCustom type="multiple" items={accordionSections} className="w-full"></AccordionCustom>
