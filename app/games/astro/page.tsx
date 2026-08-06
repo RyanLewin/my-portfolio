@@ -130,9 +130,9 @@ export default function AstroPage() {
 
                 <div className="w-full h-0.5 bg-tint-bg my-8" />
 
-                <div className="flex flex-row flex-wrap w-full max-w-[90%] justify-evenly gap-4 sm:gap-4">
+                <div className="flex flex-row flex-wrap w-full max-w-[90%] justify-evenly gap-4 lg:gap-4">
 
-                    <div className="flex flex-col flex-wrap w-full max-w-full sm:max-w-[49%] justify-start gap-4 sm:gap-4">
+                    <div className="flex flex-col flex-wrap w-full max-w-full lg:max-w-[49%] justify-start gap-4 sm:gap-4">
                         {images.map((image, index) => (
                             <Image
                                 key={index}
@@ -150,7 +150,7 @@ export default function AstroPage() {
 
                     {/* <div className="w-full h-0.5 bg-tint-bg my-8" /> */}
 
-                    <div className="text-lg flex flex-col mb-8 gap-8 text-center w-full sm:max-w-[49%]">
+                    <div className="text-lg flex flex-col mb-8 gap-8 text-center w-full lg:max-w-[49%]">
                         <p className="font-bold text-3xl">My Role</p>
                 
                         <AccordionCustom type="multiple" items={accordionSections} className="w-full"></AccordionCustom>

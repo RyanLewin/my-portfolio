@@ -198,7 +198,7 @@ export default function HorrorPage() {
                     {images.map((image, index) => (
                         <Image
                             key={index}
-                            className="w-full sm:w-[49%] aspect-video rounded-md object-cover hover:border-2 hover:border-foreground focus:border-2 focus:border-foreground active:border-foreground active:border-2"
+                            className="w-full sm:w-[48%] aspect-video rounded-md object-cover hover:border-2 hover:border-foreground focus:border-2 focus:border-foreground active:border-foreground active:border-2"
                             src={image.src}
                             alt={image.alt}
                             width={640}

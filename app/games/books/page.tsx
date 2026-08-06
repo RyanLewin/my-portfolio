@@ -147,14 +147,14 @@ export default function BooksPage() {
 
                 <div className="w-full h-0.5 bg-tint-bg my-8" />
 
-                <div className="text-lg w-full max-w-[90%] flex flex-wrap-reverse sm:flex-wrap justify-center mb-8 gap-8 text-center">
-                    <div className="text-lg w-full max-w-[90%] sm:max-w-[55%] flex flex-col mb-8 gap-8 text-center">
+                <div className="text-lg w-full max-w-[90%] flex flex-wrap-reverse lg:flex-wrap justify-center mb-8 gap-8 text-center">
+                    <div className="text-lg w-full max-w-[90%] lg:max-w-[55%] flex flex-col mb-8 gap-8 text-center">
                         <p className="font-bold text-3xl">About The Game</p>
                         <p>A casual, simulation game in which you get to design, build upon, and upgrade your very own bookshop, before tending to it&apos;s customers during the day!</p>
                         
                         <AccordionCustom type="multiple" items={accordionSections} className="w-full"></AccordionCustom>
                     </div>
-                    <div className="w-full max-w-full sm:max-w-[40%] flex flex-col gap-4 justify-start">
+                    <div className="w-full max-w-full lg:max-w-[40%] flex flex-col gap-4 justify-start">
                         <Image
                             className="w-full aspect-video rounded-md object-cover hover:border-2 hover:border-foreground focus:border-2 focus:border-foreground active:border-foreground active:border-2"
                             src="/books/books-1.png"
@@ -190,7 +190,7 @@ export default function BooksPage() {
                     {images.map((image, index) => (
                         <Image
                             key={index}
-                            className="w-full sm:w-[49%] aspect-video rounded-md object-cover hover:border-2 hover:border-foreground focus:border-2 focus:border-foreground active:border-foreground active:border-2"
+                            className="w-full sm:w-[48%] aspect-video rounded-md object-cover hover:border-2 hover:border-foreground focus:border-2 focus:border-foreground active:border-foreground active:border-2"
                             src={image.src}
                             alt={image.alt}
                             width={640}

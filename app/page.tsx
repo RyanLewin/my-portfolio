@@ -79,7 +79,7 @@ export default function Home() {
         <AccordionCustom items={accordionSections} className="w-full mb-8" defaultValue="item-1"></AccordionCustom>
         
         <div className="flex flex-wrap w-full justify-between gap-4 sm:gap-4">
-          <Link className="w-full sm:w-[49%]" href="/games">
+          <Link className="w-full sm:w-[48%]" href="/games">
             <Image
               className="w-full aspect-video rounded-md object-cover hover:border-2 hover:border-foreground focus:border-2 focus:border-foreground active:border-foreground active:border-2"
               src="/MallOverview1.png"
@@ -89,7 +89,7 @@ export default function Home() {
             />
             <p className="text-2xl text-center">Games</p>
           </Link>
-          <Link className="w-full sm:w-[49%]" href="/book-club">
+          <Link className="w-full sm:w-[48%]" href="/book-club">
             <Image
               className="w-full aspect-video rounded-md object-cover hover:border-2 hover:border-foreground focus:border-2 focus:border-foreground active:border-foreground active:border-2"
               src="/book-club.avif"
