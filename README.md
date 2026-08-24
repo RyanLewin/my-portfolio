@@ -1,4 +1,4 @@
-# Ryan Lewin | Software & Web Developer Portfolio
+# Ryan Lewin | Developer Portfolio
 
 Welcome to the source code for my personal developer portfolio! This project showcases my expertise in modern web development, highlighting my ability to architect performant, responsive web applications using a modern JavaScript ecosystem. 
 
